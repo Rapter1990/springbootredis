@@ -27,7 +27,7 @@ public class EmployeeController {
         return employeeService.findAll();
     }
 
-    @Cacheable(value = "employees", key = "#id", unless = "#result.get().phone.equals('111-222-4444')")
+    @Cacheable(value = "employees", key = "#id", condition= "#id == 4")
     @GetMapping("/find/{id}")
     public Optional<Employee> findById(@PathVariable Long id) {
         LOG.info("Getting Employee with ID {}.", id);
