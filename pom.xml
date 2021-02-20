@@ -13,9 +13,12 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>springbootredis</name>
     <description>Redis for Spring Boot</description>
+
     <properties>
         <java.version>15</java.version>
+        <redisson-hibernate-53.version>3.15.0</redisson-hibernate-53.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -49,6 +52,22 @@
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson-hibernate-53</artifactId>
+            <version>${redisson-hibernate-53.version}</version>
         </dependency>
 
     </dependencies>
