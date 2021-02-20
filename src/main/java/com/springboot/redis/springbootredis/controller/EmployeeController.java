@@ -34,10 +34,18 @@ public class EmployeeController {
         return employeeService.findById(id);
     }
 
+    @CachePut(value = "employees", key = "employee.id")
+    @PostMapping("/save")
+    public Employee saveEmployee(@RequestBody Employee employee) {
+        LOG.info("Saving Employee.");
+        employeeService.saveAndUpdate(employee);
+        return employee;
+    }
+
     @CachePut(value = "employees", key = "#employee.id")
     @PutMapping("/update")
-    public Employee updateEmployeeByID(@RequestBody Employee employee) {
-        employeeService.updateEmployeeByID(employee);
+    public Employee updateEmployee(@RequestBody Employee employee) {
+        employeeService.saveAndUpdate(employee);
         return employee;
     }
 

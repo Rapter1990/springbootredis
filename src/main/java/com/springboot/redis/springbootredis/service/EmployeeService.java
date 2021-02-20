@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -17,16 +18,28 @@ public class EmployeeService {
     EmployeeRepository employeeRepository;
 
     public List<Employee> findAll() {
-        return employeeRepository.findAll();
+
+        List<Employee> employees = new ArrayList<>();
+        employeeRepository.findAll().forEach(employees::add);
+        return employees;
     }
 
     public Optional<Employee> findById(Long id) {
         return employeeRepository.findById(id);
     }
 
-    public Employee updateEmployeeByID(Employee employee) {
-        employeeRepository.save(employee);
-        return employee;
+    public void saveAndUpdate(Employee employee) {
+
+        boolean isUpdatingEmployee = (employee.getId() != null);
+
+        if (isUpdatingEmployee) {
+            Employee existingUser = employeeRepository.findById(employee.getId()).get();
+
+            employeeRepository.save(existingUser);
+        }else{
+            employeeRepository.save(employee);
+        }
+
     }
 
     public void deleteEmployeeByID(Long id) {
@@ -36,4 +49,5 @@ public class EmployeeService {
             employeeRepository.delete(deletedEmployee);
         }
     }
+
 }
