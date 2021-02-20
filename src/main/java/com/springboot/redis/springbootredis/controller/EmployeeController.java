@@ -43,8 +43,8 @@ public class EmployeeController {
 
     @CacheEvict(value = "employees", allEntries=true)
     @DeleteMapping("delete/{id}")
-    public void deleteUserByID(@PathVariable Long id) {
-        LOG.info("deleting person with id {}", id);
+    public void deleteEmployeeByID(@PathVariable Long id) {
+        LOG.info("Deleting Employee with id {}", id);
         employeeService.deleteUserByID(id);
     }
 }
