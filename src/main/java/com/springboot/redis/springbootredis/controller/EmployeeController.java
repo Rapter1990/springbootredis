@@ -38,14 +38,15 @@ public class EmployeeController {
     @PostMapping("/save")
     public Employee saveEmployee(@RequestBody Employee employee) {
         LOG.info("Saving Employee.");
-        employeeService.saveAndUpdate(employee);
+        employeeService.save(employee);
         return employee;
     }
 
     @CachePut(value = "employees", key = "#employee.id")
-    @PutMapping("/update")
-    public Employee updateEmployee(@RequestBody Employee employee) {
-        employeeService.saveAndUpdate(employee);
+    @PutMapping("/update/{id}")
+    public Employee updateEmployee(@RequestBody Employee employee,@PathVariable Long id) {
+        LOG.info("Updating Employee with id {}", id);
+        employeeService.update(id,employee);
         return employee;
     }
 

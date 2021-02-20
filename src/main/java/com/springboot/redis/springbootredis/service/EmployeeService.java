@@ -28,16 +28,25 @@ public class EmployeeService {
         return employeeRepository.findById(id);
     }
 
-    public void saveAndUpdate(Employee employee) {
+    public void save(Employee employee) {
 
-        boolean isUpdatingEmployee = (employee.getId() != null);
+        employeeRepository.save(employee);
+    }
+
+    public void update(Long id,Employee employee) {
+
+        boolean isUpdatingEmployee = (employee.getId() == id);
 
         if (isUpdatingEmployee) {
             Employee existingUser = employeeRepository.findById(employee.getId()).get();
 
+            existingUser.setId(id);
+            existingUser.setFirstName(employee.getFirstName());
+            existingUser.setLastName(employee.getLastName());
+            existingUser.setEmail(employee.getEmail());
+            existingUser.setPhone(employee.getPhone());
+
             employeeRepository.save(existingUser);
-        }else{
-            employeeRepository.save(employee);
         }
 
     }
