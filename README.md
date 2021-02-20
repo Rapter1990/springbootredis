@@ -49,4 +49,8 @@ http://localhost:8080/api/v1/employee/find/1
     <img src ="screenshots\redis_1.PNG">
     <p> Figure 2 </p>
     <img src ="screenshots\redis_2.PNG">
+    <p> Figure 3 </p>
+    <img src ="screenshots\redis_3.PNG">
+    <p> Figure 4 </p>
+    <img src ="screenshots\redis_4.PNG">
 </details>
