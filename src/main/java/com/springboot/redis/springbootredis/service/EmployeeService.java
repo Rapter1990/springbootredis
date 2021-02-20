@@ -40,7 +40,7 @@ public class EmployeeService {
         if (isUpdatingEmployee) {
             Employee existingUser = employeeRepository.findById(employee.getId()).get();
 
-            existingUser.setId(id);
+            existingUser.setId(employee.getId());
             existingUser.setFirstName(employee.getFirstName());
             existingUser.setLastName(employee.getLastName());
             existingUser.setEmail(employee.getEmail());
