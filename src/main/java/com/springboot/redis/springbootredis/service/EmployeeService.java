@@ -29,7 +29,7 @@ public class EmployeeService {
         return employee;
     }
 
-    public void deleteUserByID(Long id) {
+    public void deleteEmployeeByID(Long id) {
         Optional<Employee> employee = employeeRepository.findById(id);
         if(employee.isPresent()) {
             Employee deletedEmployee = employee.get();
