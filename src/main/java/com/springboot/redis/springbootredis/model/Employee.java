@@ -11,8 +11,7 @@ import java.io.Serializable;
 @Data
 @Entity
 @Cache(region = "employeeCache", usage = CacheConcurrencyStrategy.READ_WRITE)
-public class Employee implements Serializable
-{
+public class Employee implements Serializable {
     @Id
     private Long id;
     private String firstName;
