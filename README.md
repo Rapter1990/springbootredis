@@ -9,10 +9,13 @@
   <li>Here are the explation of this project</li>
   <li>e
       <ul>
-        <li>If findAll request is called in Postman, there is no cache procedure</li>
-        <li>If find any values which are located in h2 database like in first 3 values, there is cache procedure</li>
-        <li>If findAll request is called in Postman, there is no cache procedure</li>
-        <li>If findAll request is called in Postman, there is no cache procedure</li>
+        <li>If a request of findAll request is called in Postman, there is no cache procedure</li>
+        <li>If a request of finding any values which are located in h2 database like in first 3 values, there is cache procedure</li>
+        <li>If save request is called in Postman, there is no cache procedure</li>
+        <li>If a request of finding any value which is stored by a save request , there is cache procedure</li>
+        <li></li>
+        <li>If a request of updating any value, there is no cache procedure</li>
+        <li>If a request of deleting any value, there is no cache procedure</li>
       </ul>
   </li>
 </ul>
