@@ -62,12 +62,7 @@ http://localhost:8080/api/v1/employee/find/all
 http://localhost:8080/api/v1/employee/find/1
 ```
 
-<b>8 )</b> </b>
-```
-http://localhost:8080/api/v1/employee/find/1
-```
-
-<b>9 )</b> To save an employee, run this url with its <b>POST</b> request in <b>Postman</b> and write this body
+<b>8 )</b> To save an employee, run this url with its <b>POST</b> request in <b>Postman</b> and write this body
 ```
 http://localhost:8080/api/v1/employee/save
 
@@ -78,7 +73,7 @@ http://localhost:8080/api/v1/employee/save
     "phone": "111-222-4444"
 }
 ```
-<b>11 )</b> To update of any employee, run this url with its <b>PUT</b> request in <b>Postman</b> and write this body
+<b>9 )</b> To update of any employee, run this url with its <b>PUT</b> request in <b>Postman</b> and write this body
 ```
 http://localhost:8080/api/v1/employee/update/4
 
@@ -89,7 +84,7 @@ http://localhost:8080/api/v1/employee/update/4
     "phone": "111-222-5555"
 }
 ```
-<b>11 )</b> To delete of any employee, run this url with its <b>DELETE</b> request in <b>Postman</b>
+<b>10 )</b> To delete of any employee, run this url with its <b>DELETE</b> request in <b>Postman</b>
 ```
 http://localhost:8080/api/v1/employee/delete/4
 ```
