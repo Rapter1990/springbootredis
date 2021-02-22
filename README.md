@@ -3,13 +3,16 @@
 ### 📖 Information
 
 <ul style="list-style-type:disc">
-  <li>a</li>
-  <li>b</li>
-  <li>c</li>
-  <li>d</li>
+  <li>Redis is a caching process and it prevents every request coming from system from database</li>
+  <li>If there is any request which has been implemented system before, the response will be come from cache , otherwise the result is obtained from database process containing sql results.</li>
+  <li>It prevents traffic conjustion in system and comfort the usage of RAM</li>
+  <li>Here are the explation of this project</li>
   <li>e
       <ul>
-        <li>e1</li>
+        <li>If findAll request is called in Postman, there is no cache procedure</li>
+        <li>If find any values which are located in h2 database like in first 3 values, there is cache procedure</li>
+        <li>If findAll request is called in Postman, there is no cache procedure</li>
+        <li>If findAll request is called in Postman, there is no cache procedure</li>
       </ul>
   </li>
 </ul>
