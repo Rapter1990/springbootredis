@@ -1,23 +1,26 @@
 # Spring Boot and Redis via Docker
 
+<img src="screenshots\redis_12.PNG" alt="Main Information" width="800" height="600">
+
 ### 📖 Information
 
 <ul style="list-style-type:disc">
-  <li>Redis is a caching process and it prevents every request coming from system from database</li>
+  <li>Redis is a <b>caching process</b> and it prevents every request coming from system from database</li>
   <li>If there is any request which has been implemented system before, the response will be come from cache , otherwise the result is obtained from database process containing sql results.</li>
   <li>It prevents traffic conjustion in system and comfort the usage of RAM</li>
   <li>Here are the explation of this project</li>
   <li>e
       <ul>
-        <li>If a request of findAll request is called in Postman, there is no cache procedure</li>
-        <li>If a request of finding any values which are located in h2 database like in first 3 values, there is cache procedure</li>
-        <li>If save request is called in Postman, there is no cache procedure</li>
-        <li>If a request of finding any value which is stored by a save request , there is cache procedure</li>
-        <li></li>
-        <li>If a request of updating any value, there is no cache procedure</li>
-        <li>If a request of deleting any value, there is no cache procedure</li>
+        <li>If a <b>request</b> of findAll is called in Postman, there is <b>no cache</b> procedure</li>
+        <li>If a <b>request</b> of finding any values which are located in h2 database like in first 3 values is called, there is a <b>cache</b> procedure</li>
+        <li>If a <b>request</b> of saving value is called in Postman is called, there is <b>no cache</b> procedure</li>
+        <li>If a <b>request</b> of finding any value which is stored by a save request is called, there is a <b>cache</b> procedure</li>
+        <li>ıf a <b>request</b> of finding any values with providing a cachable condition is firstly called, there is <b>no cache</b> procedure. When it is called before, there is a <b>cache</b> procedure</li>
+        <li>If a <b>request</b> of updating any value is called, there is <b>no cache</b> procedure</li>
+        <li>If a <b>request</b> of deleting any value is called, there is <b>no cache</b> procedure</li>
       </ul>
   </li>
+  <li>While <b>condition</b> of <b>Cachable</b> means that a <b>condition</b> process which has been firstly evaluated by a invoked method determines if check if the data with the given key exists and it returns the result, <b>unless</b> of of <b>Cachable</b> means that the process looks up the cache which was called and returns the result after executing the method.</li>
 </ul>
 
 ### 🔨 Run the App
@@ -115,4 +118,6 @@ http://localhost:8080/api/v1/employee/delete/4
     <img src ="screenshots\redis_9.PNG">
     <p> Figure 10 </p>
     <img src ="screenshots\redis_10.PNG">
+    <p> Figure 11 </p>
+    <img src ="screenshots\redis_11.PNG">
 </details>
