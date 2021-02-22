@@ -41,6 +41,38 @@ http://localhost:8080/api/v1/employee/find/all
 http://localhost:8080/api/v1/employee/find/1
 ```
 
+<b>8 )</b> </b>
+```
+http://localhost:8080/api/v1/employee/find/1
+```
+
+<b>9 )</b> To save an employee, run this url with its <b>POST</b> request in <b>Postman</b> and write this body
+```
+http://localhost:8080/api/v1/employee/save
+
+{
+    "firstName": "Mark",
+    "lastName": "Holly",
+    "email": "markholly@example.com",
+    "phone": "111-222-4444"
+}
+```
+<b>11 )</b> To update of any employee, run this url with its <b>PUT</b> request in <b>Postman</b> and write this body
+```
+http://localhost:8080/api/v1/employee/update/4
+
+{
+    "firstName": "James",
+    "lastName": "Holly",
+    "email": "jamesholly@example.com",
+    "phone": "111-222-5555"
+}
+```
+<b>11 )</b> To delete of any employee, run this url with its <b>DELETE</b> request in <b>Postman</b>
+```
+http://localhost:8080/api/v1/employee/delete/4
+```
+
 ### Screenshots
 
 <details>
@@ -53,4 +85,16 @@ http://localhost:8080/api/v1/employee/find/1
     <img src ="screenshots\redis_3.PNG">
     <p> Figure 4 </p>
     <img src ="screenshots\redis_4.PNG">
+    <p> Figure 5 </p>
+    <img src ="screenshots\redis_5.PNG">
+    <p> Figure 6 </p>
+    <img src ="screenshots\redis_6.PNG">
+    <p> Figure 7 </p>
+    <img src ="screenshots\redis_7.PNG">
+    <p> Figure 8 </p>
+    <img src ="screenshots\redis_8.PNG">
+    <p> Figure 9 </p>
+    <img src ="screenshots\redis_9.PNG">
+    <p> Figure 10 </p>
+    <img src ="screenshots\redis_10.PNG">
 </details>
