@@ -1,6 +1,6 @@
 # Spring Boot and Redis via Docker
 
-<img src="screenshots\redis_12.PNG" alt="Main Information" width="800" height="600">
+<img src="screenshots\redis_12.PNG" alt="Main Information" width="800" height="300">
 
 ### 📖 Information
 
