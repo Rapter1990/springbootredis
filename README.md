@@ -20,7 +20,7 @@
         <li>If a <b>request</b> of deleting any value is called, there is <b>no cache</b> procedure</li>
       </ul>
   </li>
-  <li>While <b>condition</b> of <b>Cachable</b> means that a <b>condition</b> process which has been firstly evaluated by a invoked method determines if check if the data with the given key exists and it returns the result, <b>unless</b> of of <b>Cachable</b> means that the process looks up the cache which was called and returns the result after executing the method.</li>
+  <li>While <b>condition</b> of <b>Cachable</b> means that a <b>condition</b> process which has been firstly evaluated by a invoked method determines if the data with the given key exists and it returns the result, <b>unless</b> of of <b>Cachable</b> means that the process looks up the cache which was called and returns the result after executing the method.</li>
 </ul>
 
 ### 🔨 Run the App
