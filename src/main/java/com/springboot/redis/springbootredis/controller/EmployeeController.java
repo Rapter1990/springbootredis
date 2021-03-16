@@ -34,7 +34,7 @@ public class EmployeeController {
         return employeeService.findById(id);
     }
 
-    @CachePut(value = "employees", key = "employee.id")
+    @CachePut(value = "employees", key = "#employee.id")
     @PostMapping("/save")
     public Employee saveEmployee(@RequestBody Employee employee) {
         LOG.info("Saving Employee.");
