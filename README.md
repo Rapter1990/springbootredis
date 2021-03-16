@@ -8,8 +8,7 @@
   <li>Redis is a <b>caching process</b> and it prevents every request coming from system from database</li>
   <li>If there is any request which has been implemented system before, the response will be come from cache , otherwise the result is obtained from database process containing sql results.</li>
   <li>It prevents traffic conjustion in system and comfort the usage of RAM</li>
-  <li>Here are the explation of this project</li>
-  <li>e
+  <li>Here are the explation of this project
       <ul>
         <li>If a <b>request</b> of findAll is called in Postman, there is <b>no cache</b> procedure</li>
         <li>If a <b>request</b> of finding any values which are located in h2 database like in first 3 values is called, there is a <b>cache</b> procedure</li>
