@@ -31,7 +31,7 @@
     docker run -p 6379:6379 --name my-redis -d redis
 ```
 
-<b>2 )</b> Show <b>container</b> whih runs on <b>Docker</b>
+<b>2 )</b> Show <b>container</b> which runs on <b>Docker</b>
 ```
     docker ps
 ```
